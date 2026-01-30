@@ -21,7 +21,7 @@ const projects = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="h-screen overflow-hidden bg-background flex flex-col">
       {/* Hero Section */}
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-16 text-center">
