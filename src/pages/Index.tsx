@@ -5,14 +5,16 @@ import ProjectCard from "@/components/ProjectCard";
 const projects = [
   {
     title: "Jaipur Traffic Dashboard",
-    description: "Real-time traffic monitoring and analytics dashboard for Jaipur city. Visualize congestion patterns, traffic flow, and key metrics.",
+    description:
+      "Real-time traffic monitoring and analytics dashboard for Jaipur city. Visualize congestion patterns, traffic flow, and key metrics.",
     liveUrl: "https://dash.jaipurtraffic.com",
     githubUrl: "https://github.com/jaipurtraffic/dash/",
     icon: <BarChart3 className="h-6 w-6" />,
   },
   {
     title: "Route Planner",
-    description: "Smart route planning tool for navigating Jaipur's roads efficiently. Find optimal paths and avoid congested areas.",
+    description:
+      "Smart route planning tool for navigating Jaipur's roads efficiently. Find optimal paths and avoid congested areas.",
     liveUrl: "https://routes.jaipurtraffic.com/",
     githubUrl: "https://github.com/jaipurtraffic/routes",
     icon: <Route className="h-6 w-6" />,
@@ -53,7 +55,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border py-6 sm:py-8 text-center text-xs sm:text-sm text-muted-foreground mt-auto">
-        <p>© {new Date().getFullYear()} Jaipur Traffic. Open source.</p>
+        <p>© {new Date().getFullYear()} Aman Mangal</p>
       </footer>
     </div>
   );
