@@ -41,9 +41,6 @@ const Index = () => {
 
       {/* Projects Section */}
       <main className="container mx-auto px-4 py-8 sm:py-12 md:py-16 flex-1">
-        <h2 className="mb-6 sm:mb-8 text-center font-display text-xl sm:text-2xl font-semibold text-foreground">
-          Projects
-        </h2>
         <div className="mx-auto grid max-w-3xl gap-4 sm:gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
