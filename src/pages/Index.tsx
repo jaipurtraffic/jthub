@@ -8,7 +8,6 @@ const projects = [
     description:
       "Real-time traffic monitoring and analytics dashboard for Jaipur city. Visualize congestion patterns, traffic flow, and key metrics.",
     liveUrl: "https://dash.jaipurtraffic.com",
-    githubUrl: "https://github.com/jaipurtraffic/dash/",
     icon: <BarChart3 className="h-6 w-6" />,
   },
   {
@@ -16,7 +15,6 @@ const projects = [
     description:
       "Smart route planning tool for navigating Jaipur's roads efficiently. Find optimal paths and avoid congested areas.",
     liveUrl: "https://routes.jaipurtraffic.com/",
-    githubUrl: "https://github.com/jaipurtraffic/routes",
     icon: <Route className="h-6 w-6" />,
   },
 ];
