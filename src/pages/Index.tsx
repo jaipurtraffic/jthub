@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <div className="min-h-screen md:h-screen md:overflow-hidden bg-background flex flex-col">
       {/* Hero Section */}
-      <header className="border-b border-border">
+      <header>
         <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 text-center">
           <img
             src={logo}
