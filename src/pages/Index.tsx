@@ -22,7 +22,6 @@ const projects = [
 const Index = () => {
   return (
     <div className="min-h-screen md:h-screen md:overflow-hidden bg-background flex flex-col">
-      {/* Hero Section */}
       <header>
         <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 text-center">
           <img
@@ -39,7 +38,6 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Projects Section */}
       <main className="container mx-auto px-4 py-8 sm:py-12 md:py-16 flex-1">
         <div className="mx-auto grid max-w-3xl gap-4 sm:gap-6 md:grid-cols-2">
           {projects.map((project) => (
@@ -48,7 +46,6 @@ const Index = () => {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="border-t border-border py-6 sm:py-8 text-center text-xs sm:text-sm text-muted-foreground mt-auto">
         <p>© {new Date().getFullYear()} Aman Mangal</p>
       </footer>

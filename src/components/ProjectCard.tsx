@@ -1,27 +1,33 @@
+import type { ReactNode } from "react";
 import { ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   liveUrl: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
 }
 
-const ProjectCard = ({ title, description, liveUrl, icon }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  liveUrl,
+  icon,
+}: ProjectCardProps) => {
   return (
-    <div className="group relative rounded-lg border border-border bg-card p-4 sm:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
+    <div className="relative rounded-lg border border-border bg-card p-4 sm:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
       <div className="mb-3 sm:mb-4 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg bg-secondary text-primary">
         {icon}
       </div>
-      
+
       <h3 className="mb-2 font-display text-lg sm:text-xl font-semibold text-foreground">
         {title}
       </h3>
-      
+
       <p className="mb-4 sm:mb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed">
         {description}
       </p>
-      
+
       <a
         href={liveUrl}
         target="_blank"
