@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 @layer base {
+  /* Lovable injects this badge on hosted previews; keep it hidden. */
+  #lovable-badge {
+    display: none !important;
+  }
+
   :root {
     --background: 209 40% 96%;
     --foreground: 222 47% 11%;
