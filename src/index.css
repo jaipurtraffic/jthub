@@ -1,29 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-card: hsl(var(--card));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
 
 @layer base {
-  /* Lovable injects this badge on hosted previews; keep it hidden. */
-  #lovable-badge {
-    display: none !important;
-  }
-
   :root {
     --background: 209 40% 96%;
     --foreground: 222 47% 11%;
 
     --card: 210 40% 98%;
-    --card-foreground: 222 47% 11%;
 
     --primary: 200 98% 39%;
     --primary-foreground: 204 100% 97%;
 
     --secondary: 215 24% 26%;
-    --secondary-foreground: 210 40% 98%;
 
-    --muted: 215 20% 65%;
     --muted-foreground: 222 47% 11%;
 
     --border: 212 26% 83%;
@@ -37,11 +46,5 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-  }
-}
-
-@layer utilities {
-  .font-display {
-    font-family: "Space Grotesk", sans-serif;
   }
 }

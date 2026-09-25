@@ -15,7 +15,7 @@ const ProjectCard = ({
   icon,
 }: ProjectCardProps) => {
   return (
-    <div className="relative rounded-lg border border-border bg-card p-4 sm:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
+    <div className="rounded-lg border border-border bg-card p-4 sm:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
       <div className="mb-3 sm:mb-4 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg bg-secondary text-primary">
         {icon}
       </div>
